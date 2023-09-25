@@ -1,0 +1,871 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Montserrat';
+    min-height: 100vh;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.mid{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-size: small;
+}
+
+.mid p{
+    padding-top: 5px;  
+}
+.mid a{
+  padding-top: 5px;  
+  color: aliceblue;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+.right img{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50px;
+    }
+
+.logopng img{
+    display: flex;
+    height: 40px;
+}
+
+.register-button {
+  display: flex;
+  background-color:transparent;
+  color: aliceblue;
+  padding: 5px 15px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  border-color:aliceblue;
+  margin-top: -5px;
+}
+
+  footer{
+    display:flex;
+      justify-content: space-between;
+      height: 70px;
+      align-items: center;
+      text-align: center;
+      background-color: #012139;
+      margin-top: auto;
+      width: 100%;
+      position:sticky;
+  }
+  
+  .contact{
+    margin-left: 5%;
+    float: left;
+    justify-content: space-between;
+    align-items: left;
+    height: 10vh;
+    padding: 0.5%;
+  }
+  
+  .partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    height: 9vh;
+    padding: 0.5%;
+    padding-right: 5%;
+  }
+  
+  .partner img{
+    float: right;
+    display: flex;
+  }
+  
+  footer p{
+    font-size: small;
+    color: aliceblue;
+    justify-content: space-between;
+    opacity: 50%;
+  }
+
+  .middle img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display:flex;
+    opacity: 80%;
+    }
+
+    .regisbg{
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      justify-content: right; 
+      
+    }
+
+    .textbox {
+      position: absolute;
+      background-color: rgba(61, 70, 83, 0.7);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -53%);
+      padding: 50px;
+      width: 100vw;
+      max-width: 50vw;
+      max-height: 70vh;
+      text-align: center;
+      border-radius: 30px;
+    }
+
+    .textbox > div{
+      margin-bottom: 15px;
+    }
+  
+.name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.name label {
+  margin-right: 70px;
+  font-size: 15px;
+  
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.radio {
+  justify-content: space-between;
+  /* margin-bottom: 15px; */
+  margin-left: 10px;
+
+}
+
+.gender label {
+  padding-right: 100px;
+  font-size: 15px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  
+
+}
+
+
+.email {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.email label {
+  margin-right: 105px;
+  font-size: 15px;
+}
+
+.dob {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dob label {
+  margin-right: 52px;
+  font-size: 15px;
+}
+
+.password {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.password label {
+  margin-right: 75px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  
+}
+
+.country{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.country label {
+  margin-right: 93px;
+  font-size: 15px;
+  margin-bottom: 0.5%;
+}
+
+#country{
+  margin-left: 28.75%;
+  margin-top: -5%;
+}
+
+.textbox input[type="text"],
+.textbox input[type="email"],
+.textbox input[type="password"],
+.textbox input[type="date"],
+.textbox select {
+  width: 60%; 
+  background-color: white;
+  opacity: 50%;
+  font-family: 'Montserrat';
+  border-radius: 7px;
+  font-size: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  
+}
+
+.textbox input[type="radio"]{
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.submit-button {
+  background-color:#012139; 
+  color: white;
+  border: 1.25px solid white; 
+  padding: 5px 20px; 
+  border-radius: 20px; 
+  float: right;
+  margin-top: 30px;
+  font-family: 'Montserrat';
+}
+
+
+/* ======================== */
+
+
+
+@media screen and (max-width: 1100px) {
+  .gender {
+    display:flex;
+    align-items: center;
+    padding: 0px;
+    justify-content:flex-start ;
+    
+  }
+
+  .genderm{
+   margin-left: 25%;
+  }
+
+  .genderf{
+    margin-left: 20%;
+  }
+
+  .gender label {
+  padding-right: 0px;
+  font-size: 15px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  }
+
+  .radio {
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-left: -px;
+  
+  }
+
+  #country{
+    margin-left: 35%;
+    margin-top: -5%;
+  }
+}
+
+/* ========================== */
+
+@media screen and (max-width: 981px) {
+  body {
+    font-size: 5px;
+  }
+  .container {
+    width: 20%;
+  }
+
+  .textbox{
+    max-width: 400px;
+    max-height: 400px;
+    padding: 25px;
+  }
+
+  
+  .textbox > div{
+    margin-bottom: 15px;
+  }
+
+  .country{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+  }
+
+  #country{
+    margin-left: 25%;
+    margin-top: 0%;
+  }
+  .country label {
+      margin-right: 0px;
+      font-size: 10px;
+      
+  }
+  
+
+  .name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  }
+
+  .name label {
+  margin-right: 10px;
+  font-size: 10px;
+
+  }
+
+  .gender {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content:space-between ;
+  }
+
+  .genderm{
+   margin-left: 55px;
+  }
+
+  .genderf{
+    margin-left: 10px;
+  }
+
+
+  .gender label {
+  padding-right: 0px;
+  font-size: 10px;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  }
+
+  .radio {
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-left: -30px;
+  
+  }
+
+  .email {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+
+  }
+
+  .email label {
+  margin-right: 50px;
+  font-size: 10px;
+  margin-top: 1%;
+  }
+
+  .dob {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+  }
+
+  .dob label {
+  margin-right: 30px;
+  font-size: 10px;
+  }
+
+  .password {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+
+  }
+
+  .password label {
+  margin-right: 40px;
+  font-size: 10px;
+  margin-bottom: 0%;
+  }
+
+
+
+
+  .textbox input[type="text"],
+  .textbox input[type="email"],
+  .textbox input[type="password"],
+  .textbox input[type="date"],
+  .textbox select {
+  width: 60%; 
+  background-color: white;
+  opacity: 50%;
+  font-family: 'Montserrat';
+  border-radius: 7px;
+  font-size: 10px;
+  padding: 2px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+
+  }
+
+  .textbox input[type="radio"]{
+  margin-bottom: 5px;
+  }
+
+  .submit-button {
+  background-color:#012139; 
+  color: white;
+  border: 1px solid white; 
+  padding: 5px 20px; 
+  border-radius: 20px; 
+  float: right;
+  margin-top: 30px;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  }
+
+  
+  footer{
+    display:flex;
+      justify-content: space-between;
+      height: 50px;
+      align-items: center;
+      text-align: center;
+      background-color: #012139;
+      margin-top: auto;
+      width: 100%;
+      position: sticky;
+  }
+  
+  .contact{
+    margin-left: 5%;
+    float: left;
+    justify-content: space-between;
+    align-items: left;
+    height: 30px;
+    padding: 0.5%;
+  }
+
+  
+  .partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    height: 25px;
+    padding: 0.5%;
+    padding-right: 5%;
+  }
+  
+  .partner img{
+    float: right;
+    display: flex;
+    /* margin: 0 auto; */
+  }
+  
+  footer p{
+    font-size: 8px;
+    color: aliceblue;
+    justify-content: space-between;
+    opacity: 50%;
+  }
+
+  
+.mid{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  font-size: small;
+}
+
+.mid p{
+  padding-top: 5px;  
+}
+
+.mid a{
+  padding-top: 5px; 
+  color: aliceblue;
+  font-size: 5px;
+
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  /* width: 1225px; */
+  height: 30px;
+  align-items: center;
+  padding: 20px;
+  padding-top: 20px;
+  /* font-weight: 600; */
+  text-align: center;
+
+}
+
+.right img{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  border-radius: 50px;
+  }
+
+.logopng img{
+  display: flex;
+  height: 15px;
+}
+
+.register-button {
+  display: flex;
+  background-color:transparent;
+  color: aliceblue;
+  padding: 2.5px 10px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  border-color:aliceblue;
+  margin-top: -5px;
+  font-size: 5px;
+}
+
+.middle img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display:flex;
+  opacity: 80%;
+  }
+
+}
+
+/* ========================== */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 5px;
+  }
+  .container {
+    width: 20%;
+  }
+
+  .textbox{
+    max-width: 400px;
+    max-height: 400px;
+    padding: 25px;
+  }
+
+  
+  .textbox > div{
+    margin-bottom: 15px;
+  }
+
+  .name {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  }
+
+  .name label {
+  margin-right: 10px;
+  font-size: 10px;
+
+  }
+
+  .gender {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content:space-between ;
+  }
+
+  .genderm{
+   margin-left: 65px;
+  }
+
+  .genderf{
+    margin-left: 30px;
+  }
+
+
+  .gender label {
+  padding-right: 0px;
+  font-size: 10px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  }
+
+  .radio {
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-left: -30px;
+  
+  }
+
+  .email {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+
+  }
+
+  .email label {
+  margin-right: 50px;
+  font-size: 10px;
+  }
+
+  .dob {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+  }
+
+  .dob label {
+  margin-right: 30px;
+  font-size: 10px;
+  }
+
+  .password {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+
+  }
+
+  .password label {
+  margin-right: 40px;
+  font-size: 10px;
+
+  }
+
+  .country{
+    display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+
+  }
+
+  .country label {
+  margin-right: 50px;
+  font-size: 10px;
+
+  }
+
+  .textbox input[type="text"],
+  .textbox input[type="email"],
+  .textbox input[type="password"],
+  .textbox input[type="date"],
+  .textbox select {
+  width: 60%; 
+  background-color: white;
+  opacity: 50%;
+  font-family: 'Montserrat';
+  border-radius: 7px;
+  font-size: 10px;
+  padding: 2px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+
+  }
+
+  .textbox input[type="radio"]{
+  margin-bottom: 5px;
+  }
+
+  .submit-button {
+  background-color:#012139; 
+  color: white;
+  border: 1px solid white; 
+  padding: 5px 20px; 
+  border-radius: 20px; 
+  float: right;
+  margin-top: 30px;
+  font-family: 'Montserrat';
+  font-size: 10px;
+  }
+
+  
+  footer{
+    display:flex;
+      justify-content: space-between;
+      height: 50px;
+      align-items: center;
+      text-align: center;
+      background-color: #012139;
+      margin-top: auto;
+      width: 100%;
+      position: sticky;
+  }
+  
+  .contact{
+    margin-left: 5%;
+    float: left;
+    justify-content: space-between;
+    align-items: left;
+    height: 30px;
+    padding: 0.5%;
+  }
+  
+  .partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    height: 25px;
+    padding: 0.5%;
+    padding-right: 5%;
+  }
+  
+  .partner img{
+    float: right;
+    display: flex;
+    /* margin: 0 auto; */
+  }
+  
+  footer p{
+    font-size: 8px;
+    color: aliceblue;
+    justify-content: space-between;
+    opacity: 50%;
+  }
+
+  
+.mid{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  font-size: small;
+}
+
+.mid p{
+  padding-top: 5px;  
+}
+
+.mid a{
+  padding-top: 5px; 
+  color: aliceblue;
+  font-size: 5px;
+
+}
+
+header{
+  display:flex;
+  justify-content: space-between;
+  /* width: 1225px; */
+  height: 30px;
+  align-items: center;
+  padding: 20px;
+  padding-top: 20px;
+  /* font-weight: 600; */
+  text-align: center;
+
+}
+
+.right img{
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  border-radius: 50px;
+  }
+
+.logopng img{
+  display: flex;
+  height: 15px;
+}
+
+.register-button {
+  display: flex;
+  background-color:transparent;
+  color: aliceblue;
+  padding: 2.5px 10px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  border-color:aliceblue;
+  margin-top: -5px;
+  font-size: 5px;
+}
+
+.middle img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display:flex;
+  opacity: 80%;
+  }
+
+  #country{
+    display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  /* padding: 0; */
+  margin-top: -15px;
+  margin-left: 40.5%;
+  }
+
+  
+  .country{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  padding: 0;
+  }
+  
+  .country label {
+  margin-right: 50%;
+  font-size: 10px;
+  
+  }
+
+
+}
+

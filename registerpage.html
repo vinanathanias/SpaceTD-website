@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceTD</title>
+    <link rel="stylesheet" href="registerstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="logopng"><img src="logo.png" alt="logo"></img></div>
+        <div class="mid">
+            <a href="homepage.html" id="home"> Home </a>
+            <a href="programpage.html" id="program"> Programs </a>
+            <a href="vehiclepahe.html" id="vehicle"> Vehicles </a>
+            <a href="launchpage.html" id="launch"> Launches </a>
+            <a href="registerpage.html">
+                <button class="register-button">Register</button>
+            </a>
+            </div>
+        <div class="right">
+            <img src="profilepict.jpg" alt="Profile Picture"></img>
+        </div>
+    
+    </header>
+    <div class="middle">
+        <img src="regisbg.jpg" alt="regisbg">
+
+        <div class="container">
+            <div class="textbox">
+                <form>
+                    <!-- Name imput box -->
+                <div class="name">
+                    <label for="fullname">Full Name :</label>
+                    <input name="fullname" id="fullname" type="text" placeholder="Full Name">
+                </div>
+
+                <!-- gender radio button -->
+                <div class="gender">
+                    <label for="gender">Gender :</label>
+                    <input type="radio" id="genderm" name="gender" class="genderm">
+                    <label for="radio1" class="radio">Male</label>
+
+                    <input type="radio" id="genderf" name="gender" class="genderf">
+                    <label for="radio2" class="radio">Female</label>
+
+                </div>
+                
+                <!-- email box -->
+                <div class="email">
+                    <label for="email">Email :</label>
+                    <input type="email" placeholder="youremail@email.com " id="email">
+                </div>
+
+                <div class="dob">
+                    <label for="dob">Date of Birth :</label>
+                    <input type="date" id="dob" name="dob">
+
+                </div>
+
+                <div class="password">
+                    <label for="password">Password :</label>
+                    <input type="password" placeholder="Enter your password" id="password">
+
+                </div>
+
+                <div class="country">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="USA">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Croatia">Croatia</option>
+                    <option value="Findland">Findland</option>
+
+
+                    </select>
+
+                </div>
+
+                <div class="submit">
+                    <button class="submit-button" id="submit-button">Submit</button>
+                </div>
+                </form>
+                
+
+            </div>
+
+        </div>
+      </div>
+    
+
+    <footer>
+        <img src="contact.png" class="contact" alt="contact"></img>
+        <p>Copyright &copy; 2023 SpaceTD. All Rights Reserved.</p>
+        <div class="partner"><img src="partner.png" alt="partner"></div>
+        
+    </footer>
+</body>
+<script src="home.js"></script>
+<script src="register.js"></script>
+</html>
